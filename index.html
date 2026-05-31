@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Virendra Bagul - IT Student & Developer Portfolio. Showcasing projects in Web Development, Python, DevOps, and more.">
+    <title>Paras Mahajan | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+     emailjs.init("qibg2YrOnGRhtCGgD");
+    </script>
+</head>
+
+<body>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">PM</div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <div class="scroll-up-btn" id="scrollUpBtn" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">P</span><span class="logo-accent">Mahajan</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HOME SECTION ========== -->
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-text" data-aos="fade-right" data-aos-duration="1000">
+                <div class="greeting">👋 Hello, I'm</div>
+                <h1 class="hero-name">Paras<br><span class="name-accent">Mahajan</span></h1>
+                <div class="hero-role">
+                    <span>I am a </span>
+                    <span class="typing-text" id="typingText"></span>
+                </div>
+                <p class="hero-desc">B.Tech student passionate about Data Visualization and Business Intelligence — With
+                    the help of Data Engineer & Data Analytics.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> View Work
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/paras-mahajan-35a5632a1/" target="_blank" class="social-chip"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/parasmahajan78" target="_blank" class="social-chip" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/paras_mahajan106/?hl=en" target="_blank" class="social-chip"
+                        title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:mahajanparas505@gmail.com" class="social-chip" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="Paras_portfolio_Pic.jpg" alt="Paras Mahajan" class="profile-img"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-code"></i> Data Engineer
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-server"></i> Data Analytics
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fas fa-cloud"></i> Python Developer
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About <span class="title-accent">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrap" data-aos="fade-right" data-aos-duration="900">
+                    <div class="about-img-frame">
+                        <img src="Paras_portfolio_Pic.jpg" alt="Paras Mahajan" class="about-img"
+                            onerror="this.src=''; this.parentElement.style.background='linear-gradient(135deg,#667eea,#764ba2)'; this.style.display='none';">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="6">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+                    <h3 class="about-heading">I'm Paras & I'm a <span class="typing-about"></span></h3>
+                    <p class="about-text">
+                        Now i have Completed my <strong>B.Tech in Civil Engineering</strong> at SVKM Institute of
+                        Technology, Dhule (2022–2025). My interest in Data Engineer and Data Analytics,
+                        Passionate about Data Visualization, ETL Processes & Business Intelligence.
+                    </p>
+                    <p class="about-text">
+                        My programming toolkit includes <strong>Python, SQL, Microsoft Excel </strong>, and web development with
+                        <strong>HTML, CSS & JavaScript</strong>. I've also explored <strong>SQL Databases MySQL, Oracle</strong>. practices
+                        and Visualization with <strong>Pandas, Matplotlib</strong>. I'm always eager to learn and grow — every challenge is a
+                        new opportunity! 🚀
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">🎓 B.Tech</span>
+                        <span class="tag">💻 Web Dev</span>
+                        <span class="tag">🛢️ SQL Database</span>
+                        <span class="tag">📚 Libraries</span>
+                        <span class="tag">🐍 Python</span>
+                    </div>
+                    <a href="New_paras_mahajan_resume.pdf" id="downloadCvBtn" class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section class="education" id="education">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Education <span class="title-accent">Timeline</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- B.Tech -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">2022 – 2025</div>
+                        <h3>B.Tech – Civil Engineering</h3>
+                        <h4>SVKM Institute of Technology, Dhule</h4>
+                        <p>I have Completed Bachelor of Technology in Civil Engineering.But I also interest and Gaining expertise in programming,
+                            web technologies, databases, Data Visualization, ETL Processes & Business Intelligence.</p>
+                        <div class="timeline-img-wrap">
+                            <img src="img/SVKM_2026.jpg" alt="SVKM IOT" class="timeline-img"
+                                onerror="this.style.display='none'">
+                        </div>
+                        <div class="timeline-chips">
+                            <span>Civil Engineering</span>
+                            <span>Completed</span>
+                            <span class="chip-highlight">CGPA: 6.43 / 10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSC -->
+                <div class="timeline-item right" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                    <div class="timeline-dot">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">2019 – 2022</div>
+                        <h3>Diploma – Technical Education</h3>
+                        <h4>SSVPS's Bapusaheb Shivajirao Deore Polytechnic, Dhule</h4>
+                        <p>Completed Diploma in Technical Education. Graduated with excellent academic
+                            performance.</p>
+                        <div class="timeline-img-wrap">
+                            <img src="img/SSVPS_2022.jpg" alt="Samata Vidyalaya" class="timeline-img"
+                                style="object-position: center top;" onerror="this.style.display='none'">
+                        </div>
+                        <div class="timeline-chips">
+                            <span>Technical Education</span>
+                            <span class="chip-highlight">80.44%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="100" data-aos-delay="100">
+                    <div class="timeline-dot">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badge">Until 2019</div>
+                        <h3>SSC – Lower Secondary Education</h3>
+                        <h4> NZBP Secondary High School, Dhule </h4>
+                        <p>Completed Secondary School Certificate with Good marks, building a strong academic
+                            foundation.</p>
+                        <div class="timeline-img-wrap">
+                            <img src="img/Mayur_Highschool_2019.jpg" alt="KBH Vidyalaya" class="timeline-img"
+                                style="object-position: center top;" onerror="this.style.display='none'">
+                        </div>
+                        <div class="timeline-chips">
+                            <span>Passed: 2019</span>
+                            <span class="chip-highlight">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Technical <span class="title-accent">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Skill Bars -->
+                <div class="skills-bars" data-aos="fade-right" data-aos-duration="900">
+                    <h3 class="skills-subtitle">Proficiency Levels</h3>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fab fa-python"></i>Python</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90" style="--skill-color: #FF6B6B;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fa-brands fa-square-js"></i>JavaScript</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85" style="--skill-color: #FF8E53;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fas fa-database"></i> SQL</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90" style="--skill-color: #4ECDC4;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90" style="--skill-color: #7B68EE;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85" style="--skill-color: #A78BFA;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-info">
+                            <span class="skill-name"><i class="fa-solid fa-file-excel"></i> MS Excel</span>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="60" style="--skill-color: #34D399;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Cards -->
+                <div class="tech-cards" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+                    <h3 class="skills-subtitle">Tech I Work With</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <i class="fab fa-python" style="color:#4ECDC4;"></i>
+                            <span style="color:#B2F5EA;">Python</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-html5" style="color:#FF6B6B;"></i>
+                            <span style="color:#FFC1C1;">HTML5</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-css3-alt" style="color:#7B68EE;"></i>
+                            <span style="color:#D8B4FE;">CSS3</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-js-square" style="color:#F7DC6F;"></i>
+                            <span style="color:#FEF3C7;">JavaScript</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-github" style="color:#E0E0E0;"></i>
+                            <span style="color:#D8B4FE;">GitHub</span>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fas fa-database" style="color:#FF8E53;"></i>
+                            <span style="color:#FFD0B5;">SQL</span>
+                        </div>
+                
+                        <div class="tech-card">
+                            <img src="https://img.icons8.com/color/96/panda.png" width="50">
+                            <span style="color:#E5E7EB;">Pandas</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="https://img.icons8.com/color/96/bar-chart.png" width="50">
+                            <span style="color:#93C5FD;">Matplotlib</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="https://img.icons8.com/color/96/power-bi.png" width="50">
+                            <span style="color:#FDE68A;">Power BI</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"  width="50"
+                            style="filter: drop-shadow(0 0 12px #3B82F6);">
+                            <span style="color:#93C5FD;">MySQL</span>
+                        </div>
+ 
+                        <div class="tech-card">
+                            <i class="fab fa-aws" style="color:#FF9900;"></i>
+                            <span style="color:#FFD580;">AWS</span>
+                        </div>
+
+                        <div class="tech-card">
+                            <img src="https://img.icons8.com/color/96/microsoft-excel-2019.png" width="50">
+                            <span style="color:#86EFAC;">MS Excel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Built</span>
+                <h2 class="section-title">My <span class="title-accent">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- 1. Pizza Sales -->
+                <div class="project-card featured talentflow-card" data-aos="fade-up" data-aos-delay="0"
+                    data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/Pizza_Sales.png" alt="NeuroAid"
+                            style="object-fit: cover; object-position: center;"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-brain></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/Pizza-Sales-Analysis" target="_blank"
+                                class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>SQL</span><span>MySQL</span><span>Microsoft Excel</span>
+                        </div>
+                        <h3>Pizza Sales Analysis <span class="featured-badge talentflow-badge">💹 Analysis</span></h3>
+                        <p>Pizza Sales Analysis track sales performance, customer ordering patterns, and revenue trends. 
+                           The project provides insights into top-selling pizzas, peak order timings, category-wise sales, and monthly 
+                           revenue using data visualization tools like Excel and SQL for data analysis.</p>
+                        <a href="https://github.com/parasmahajan78/Pizza-Sales-Analysis" target="_blank"
+                            class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Garage Syatem -->
+                <div class="project-card featured talentflow-card" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/Garage system.png" alt="TalentFlow"
+                            style="object-fit: contain; object-position: center; background: #040d1c; padding: 6px;"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-users></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/Garage-System-Analysis" target="_blank"
+                                class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>SQL</span><span>Oracle</span><span>Microsoft Excel</span><span>Word</span>
+                        </div>
+                        <h3>Garage system Analysis <span class="featured-badge talentflow-badge">🚗 Garage</span></h3>
+                        <p>Garage System Analysis project focuses on managing customer services, vehicle records, employee performance, and spare parts inventory efficiently.
+                            It helps improve garage operations, inventory tracking, and business decision-making through analytical insights and dashboards.</p>
+                        <a href="https://github.com/parasmahajan78/Garage-System-Analysis" target="_blank"
+                            class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. API Currency Converter -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/API_currency.jpg" alt="Crop Recommender"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-seedling></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/API-Currency-Converter" target="_blank"
+                                class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>Javascript</span>
+                        </div>
+                        <h3>API Currency Converter <span class="featured-badge">💰 Currency</span></h3>
+                        <p>API Currency Converter converts currencies in real time using live exchange rate APIs.
+                           It supports multiple international currencies with fast and accurate conversion results.
+                           The project provides a simple and interactive way to perform global currency calculations efficiently.</p>
+                        <a href="https://github.com/parasmahajan78/API-Currency-Converter" target="_blank"
+                            class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Movie Recommender -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/movie-recommed.webp" alt="To Do List" style="object-fit:contain; background:#111;"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-tasks></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/Movie-Recommendation-System"
+                                target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Python</span><span>Sckit-Learn</span>
+                        </div>
+                        <h3>Movie Recommendation system</h3>
+                        <p>Movie Recommendation System provides personalized movie suggestions based on user interests and ratings.
+                           It uses recommendation algorithms and data analysis techniques to help users discover relevant movies easily.</p>
+                        <a href="https://github.com/parasmahajan78/Movie-Recommendation-System"
+                            target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. Rock Paper Scesor -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/Rocky.jpg" alt="Tic Tac Toe"
+                            style="object-fit:contain; background:#111;"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-gamepad></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/Rock-Paper-Scesor"
+                                target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <h3>Rock Paper Scesor</h3>
+                        <p>Rock Paper Scissors Game is an interactive mini project based on user choice and computer-generated random selections.
+                        It uses programming logic and conditional statements to determine the winner and provide an engaging gameplay experience.</p>
+                        <a href="https://github.com/parasmahajan78/Rock-Paper-Scesor"
+                            target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. Tic Tak Toe -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+                    <div class="project-image">
+                        <img src="img/Tic Tak.png" alt="Calculator"
+                            onerror="this.parentElement.innerHTML='<div class=project-img-placeholder><i class=fas fa-calculator></i></div>'">
+                        <div class="project-overlay">
+                            <a href="https://github.com/parasmahajan78/Tic-Tac-Game"
+                                target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <h3>Tic Tak Toe</h3>
+                        <p>Tic Tac Toe Game is a simple interactive game where two players compete to match symbols in a row, column, or diagonal.
+                           It uses programming logic, conditions, and game algorithms to provide an engaging and user-friendly gaming experience.</p>
+                        <a href="https://github.com/parasmahajan78/Tic-Tac-Game"
+                            target="_blank" class="project-github-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Let's Talk</span>
+                <h2 class="section-title">Get In <span class="title-accent">Touch</span></h2>
+                <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you!
+                </p>
+            </div>
+
+            <!-- Availability Badge -->
+            <div class="availability-banner" data-aos="fade-up" data-aos-delay="100">
+                <span class="avail-dot"></span>
+                <span>Available for Internship &amp; Job opportunities</span>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Info Panel -->
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="900">
+                    <p class="contact-intro">Feel free to reach out for collaborations, projects, or just a friendly
+                        chat.
+                        I respond within <strong>24 hours</strong> — let's build something great together! 🚀</p>
+
+                    <!-- Contact Info Cards (click to copy) -->
+                    <div class="contact-item copyable" data-copy="Pune, Maharashtra, India"
+                        title="Click to copy location">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Location</h4>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                        <span class="copy-hint"><i class="fas fa-copy"></i></span>
+                    </div>
+
+                    <div class="contact-item copyable" data-copy="+917378615247" title="Click to copy phone number">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+917378615247">+91 73786 15247</a></p>
+                        </div>
+                        <span class="copy-hint"><i class="fas fa-copy"></i></span>
+                    </div>
+
+                    <div class="contact-item copyable" data-copy="mahajanparas505@gmail.com" title="Click to copy email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <p><a href="mailto:mahajanparas505@gmail.com">mahajanparas505@gmail.com</a></p>
+                        </div>
+                        <span class="copy-hint"><i class="fas fa-copy"></i></span>
+                    </div>
+
+                    <!-- WhatsApp quick button -->
+                    <a href="https://wa.me/917378615247?text=Hi!%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect."
+                        target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Chat on WhatsApp</span>
+                        <i class="fas fa-arrow-right whatsapp-arrow"></i>
+                    </a>
+
+                    <!-- Social Links -->
+                    <div class="contact-socials">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/paras-mahajan-35a5632a1/" target="_blank"
+                                class="social-btn linkedin">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/parasmahajan78" target="_blank" class="social-btn github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.instagram.com/paras_mahajan106/?hl=en" target="_blank" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="contact-form-wrap" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+                    <div class="form-header">
+                        <h3>Send a Message <i class="fas fa-paper-plane form-plane-icon"></i></h3>
+                        <p>Fill in the details below and I'll get back to you ASAP.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <!-- Honeypot spam protection -->
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                        <div class="form-row">
+                            <div class="form-group" id="nameGroup">
+                                <label for="cnt-name">
+                                    <i class="fas fa-user label-icon"></i> Full Name <span
+                                        class="required-star">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="cnt-name" name="name" placeholder="e.g. John Doe"
+                                        autocomplete="name" maxlength="60" required>
+                                    <span class="input-status-icon"></span>
+                                </div>
+                                <span class="field-error" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group" id="emailGroup">
+                                <label for="cnt-email">
+                                    <i class="fas fa-at label-icon"></i> Email Address <span
+                                        class="required-star">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="cnt-email" name="email" placeholder="you@example.com"
+                                        autocomplete="email" required>
+                                    <span class="input-status-icon"></span>
+                                </div>
+                                <span class="field-error" id="emailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="subjectGroup">
+                            <label for="cnt-subject">
+                                <i class="fas fa-tag label-icon"></i> Subject
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="text" id="cnt-subject" name="subject" placeholder="What's this about?"
+                                    maxlength="100">
+                                <span class="input-status-icon"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="msgGroup">
+                            <label for="cnt-msg">
+                                <i class="fas fa-comment-alt label-icon"></i> Message <span
+                                    class="required-star">*</span>
+                            </label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <textarea id="cnt-msg" name="message" rows="5"
+                                    placeholder="Tell me about your project, idea, or just say hi! 👋" maxlength="1000"
+                                    required></textarea>
+                                <span class="char-counter" id="charCounter">0 / 1000</span>
+                            </div>
+                            <span class="field-error" id="msgError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </span>
+                            <span class="btn-loading" style="display:none;">
+                                <i class="fas fa-circle-notch fa-spin"></i> Sending...
+                            </span>
+                        </button>
+
+                        <p class="form-note">
+                            <i class="fas fa-shield-alt"></i> Your information is safe and will never be shared.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">P<span>Mahajan</span></div>
+            <p class="footer-tagline">Building the future, one line of code at a time. 🚀</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/paras-mahajan-35a5632a1/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/parasmahajan78" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/paras_mahajan106/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:mahajanparas505@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">
+                Designed & Built by <a href="https://www.linkedin.com/in/paras-mahajan-35a5632a1/"
+                    target="_blank">Paras Mahajan</a> &copy; <span id="footerYear"></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
